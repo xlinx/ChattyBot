@@ -15,13 +15,13 @@ from cleverwrap import CleverWrap
 chatBot = CleverWrap("CC6zkRgO9TPlPcz6AO_zLCunNBg")
 import subprocess
 import sys
-
+#hihi
 shell = True
 #chatBot.reset()
 
 def speak(this):
     print('- '+str(this))
-    subprocess.run(['flite', '-voice', 'file://cmu_us_aew.flitevox', '-t', str(this)])
+    subprocess.run(['say', str(this)])
 
 speak('I\'m listening')
 var = input('> ')
