@@ -1,3 +1,17 @@
+# This is a voice-output interface for CleverBot, a chatbot.
+# Needs python3, cleverwrap and flite chattyto run
+# python should be present in a unix terminal
+#
+# pip install cleverwrap
+# sudo apt-get install flite
+#
+# Usage:
+# python chatBot.py
+# then just type after the > prompt
+# to leave, type > I'm leaving
+# add some CHT support and make two bot chat each other. 
+# 2019 NTHU classroom example in Taiwan. merry xMas~
+
 from cleverwrap import CleverWrap
 from googletrans import Translator
 translator = Translator()
