@@ -27,13 +27,16 @@ def speak(this):
 speak('I\'m listening')
 var_CH = input('> ')
 var_EN=translator.translate(var_CH, src='zh-tw',dest='en')
-print(var_EN.text)
+
 chatting = True
 while chatting == True:
-        if(var == 'I\'m leaving'):
+        if(var_EN == 'I\'m leaving'):
             chatting = False
             break
-        reply = chatBot.say(str(var))
+        
+        reply = chatBot.say(str(var_EN.text))
+        print('var_EN=',var_EN.text,'var_CH',var_CH)
+        
         speak(reply)
         var = input('> ')
 
