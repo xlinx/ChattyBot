@@ -11,6 +11,7 @@
 # to leave, type > I'm leaving
 # add some CHT support and make two bot chat each other. 
 # 2019 NTHU classroom example in Taiwan. merry xMas~
+# 2019 TNUA classroom example in Taiwan. merry xMas~
 
 from cleverwrap import CleverWrap
 from googletrans import Translator
